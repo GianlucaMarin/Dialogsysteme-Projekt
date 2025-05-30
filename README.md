@@ -96,7 +96,7 @@ Alternativ können sich Nutzer:innen vom Bot Rezeptvorschläge anzeigen lassen. 
 - Entweder wird ein konkretes Gericht gewünscht („Ich will Pasta essen“),
 - oder es wird mit vorhandenen Zutaten gearbeitet („Ich habe Hähnchen, Brokkoli und Reis“).
 
-Im ersten Fall fragt der Bot nach dem gewünschten Gericht. Die Eingabe wird in einer Variable wie `food_wish` gespeichert und intern mit einer eingebetteten Excel-Tabelle verglichen, die im Projekt als Datenquelle hinterlegt ist. Passend zur Anfrage gibt der Bot dann einen Vorschlag zurück.
+Im ersten Fall fragt der Bot nach dem gewünschten Gericht. Die Eingabe wird in einer Variable wie `food_wish` gespeichert und intern mit den eingebetteten Gerichten (KB) verglichen, die im Projekt als Datenquellen (in Textformat) hinterlegt sind. Passend zur Anfrage gibt der Bot dann einen Vorschlag zurück.
 
 Im zweiten Fall fragt der Bot nach den verfügbaren Zutaten. Auch diese Eingabe wird mit der selben Tabelle abgeglichen. Der Bot sucht passende Rezeptkombinationen und schlägt dem Nutzer ein Gericht vor, das möglichst viele der vorhandenen Zutaten verwendet.
 
@@ -104,11 +104,20 @@ Nach jedem Rezeptvorschlag – unabhängig davon, ob dieser auf einer konkreten 
 
 ### 3. Technische Integration & Fehlerbehandlung
 
-Im Gegensatz zum Onboarding-Flow, bei dem externe Dienste wie Make zur Anwendung kommen, ist die technische Logik im „meal and track“-Flow vollständig innerhalb von Voiceflow umgesetzt. Die Rezeptvorschläge – sowohl für konkrete Wunschmahlzeiten als auch für Kombinationen basierend auf vorhandenen Zutaten – basieren auf einer intern eingebundenen Excel- oder CSV-Datei. Diese wurde als Datenquelle im Projekt integriert und ermöglicht den Zugriff auf gespeicherte Rezepte, ohne auf externe APIs angewiesen zu sein. Die Eingaben der Nutzer:innen werden über Variablen (z. B. `food_wish`) gespeichert und gegen die lokal eingebettete Datensammlung geprüft.
+Im Gegensatz zum Onboarding-Flow, bei dem externe Dienste wie Make zur Anwendung kommen, ist die technische Logik im „meal and track“-Flow vollständig innerhalb von Voiceflow umgesetzt. Die Rezeptvorschläge – sowohl für konkrete Wunschmahlzeiten als auch für Kombinationen basierend auf vorhandenen Zutaten – basieren auf intern eingebundenen Textdateien. Zu jedem einzelnen Rezept wurde eine eigene Textdatei erstellt um Designprobleme zu einem späteren Zeitpunkt zu vermeiden. Zu Beginn haben wir mit Excel-Dateien gearbeitete, dies führte bei der Anzeige im Agent jedoch zu Designproblemen, entsprechend haben wir uns für einzelne Textdokumente entschieden. Diese wurde als Datenquelle im Projekt integriert und ermöglicht den Zugriff auf gespeicherte Rezepte, ohne auf externe APIs angewiesen zu sein. Die Eingaben der Nutzer:innen werden über Variablen (z. B. `food_wish`) gespeichert und gegen die lokal eingebettete Datensammlung geprüft.
 
 Die Interaktionen im Kalorien-Tracking verlaufen ebenfalls vollständig innerhalb von Voiceflow. Die Nutzer:innen können Kalorienwerte hinzufügen oder ihren aktuellen Tagesstand abfragen. Auch hier wurde auf eine saubere Trennung zwischen Eingabe und Anzeige geachtet, um Fehler zu vermeiden. Die Ergebnisse werden direkt angezeigt, ohne dass Daten in einer externen Umgebung gespeichert werden müssen.
 
 Besonderes Augenmerk wurde auf die Fehlerbehandlung und Rückführung gelegt. Nach jeder Rezeptempfehlung fragt NutriBot, ob der Vorschlag gefällt. Wird dieser abgelehnt, erscheint eine gezielte Nachfrage: „Would you like to try again or go back to the main menu?“. Diese zusätzliche Entscheidungsstufe verhindert Sackgassen im Dialogverlauf und erlaubt den Nutzer:innen, sich entweder einen neuen Vorschlag anzeigen zu lassen oder zum Hauptmenü zurückzukehren. Dadurch bleibt der Flow flexibel, nachvollziehbar und nutzerfreundlich.
 
+Um Variablen, wie zum Beispiel die E-Mail, welche im Onboarding-Workflow gesetzt wird, auch Workflowübergreifend zu verwenden, haben wir mithilfe des "Set"-Logic eine Sessionvariable gesetzt. Nun kann die "temp_mail" in allen neuen oder bereits vorhanden Workflows verwendet werden. Hier das erwähnte Beispiel:
+
+<img width="354" alt="Bildschirmfoto 2025-05-29 um 16 04 56" src="https://github.com/user-attachments/assets/891dd6c4-fae4-4ae3-a380-f9de0f7cb879" />
+
+Ein weiterer Prompt wurde hinzegfügt um herauszufinden, mit welchen Zutaten der User genau kochen möchte. Da der User wie oben beschrieben, z.B. „Ich habe Hähnchen, Brokkoli und Reis“, als Anfrage senden kann, müssen wir die einzelnen Zutaten herausfiltern, um mit diesen die KB abzufragen. Dieser Prompt ist lediglich für die Extraktion von Nahrungsmittel aus der Nachricht des Users zuständig. Dieser sieht wie folgt aus:
+
+<img width="746" alt="Bildschirmfoto 2025-05-29 um 16 09 28" src="https://github.com/user-attachments/assets/6db77d54-3e93-4c48-a914-529c6b6fbdfb" />
+
+----------------------------------------
 
 Insgesamt war das Projekt eine spannende Gelegenheit, theoretisches Wissen über dialogbasierte Systeme mit praktischer Umsetzung zu verbinden. Der iterative Aufbau über Persona-Definition, Use Case, Architektur und prototypische Dialoggestaltung hat uns geholfen, ein funktionales, zielgruppenorientiertes System zu entwickeln, das reale Mehrwerte liefert.
