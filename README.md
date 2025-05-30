@@ -115,7 +115,9 @@ Wenn Nutzer:innen sich entscheiden, ihre Kalorienaufnahme zu verwalten, führt N
   <img src="./Screenshot 2025-05-30 160737.png" width="300" alt="Screenshot 2025-05-30 160737.png" />
 </p>
 
-**Wird hingegen „View Daily Calories“ gewählt**, verzweigt der Flow zu einem zweiten Block, in dem einfach die bisherige Tagesbilanz angezeigt wird. Auch hier erfolgt der Abruf über Make, jedoch ohne Änderung an der Datenbank – das System bleibt lesend und informativ.
+**Wird hingegen „View Daily Calories“ gewählt**, verzweigt der Flow zu einem zweiten Block, in dem einfach die bisherige Tagesbilanz angezeigt wird. Auch hier erfolgt der Abruf über Make, jedoch ohne Änderung an der Datenbank – das System bleibt lesend und informativ. Im New Block 9 wird ein POST-Request an Make gesendet, um die aktuellen täglichen Kalorien anzuzeigen. Dieser Block dient dazu, den Nutzer:innen einen Überblick darüber zu geben, wie viele Kalorien sie bereits an diesem Tag konsumiert haben. Die Daten werden dynamisch aus der Datenbank abgerufen und als Wert im Format "Your calories today: {calories_today}" angezeigt. So behalten die Nutzer:innen ihre tägliche Kalorienaufnahme immer im Blick.
+
+
 
 Durch diese saubere Trennung zwischen Abfrage und Aktualisierung wird vermieden, dass Nutzer:innen versehentlich Daten überschreiben oder ungewollte Eingaben tätigen. Gleichzeitig bleibt die Interaktion effizient und leicht verständlich.
 
