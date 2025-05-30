@@ -11,6 +11,8 @@ Zu Beginn des Projekts stand die **Definition des Use Cases** im Fokus. Wir stel
 
 Im nächsten Schritt entwickelten wir eine **User Persona**, um die Bedürfnisse und Erwartungen unserer Zielgruppe besser zu verstehen. Die Persona „Mans Hustermann“ steht dabei stellvertretend für gesundheitsbewusste, aktive Menschen, die Wert auf einfache, funktionale Ernährungslösungen legen, jedoch Unterstützung bei der Umsetzung brauchen – sei es bei der Makroberechnung, bei der Ideenfindung oder beim Tracken von Mahlzeiten.
 
+<img src="Screenshot 2025-05-30 143442.png" width="400" alt="User Persona für NutriBot" />
+
 Basierend darauf konzipierten wir eine passende **Bot-Persona**. NutriBot ist freundlich, verständlich und ermutigend im Ton – bewusst so gewählt, um einen niedrigschwelligen Einstieg zu ermöglichen. Der Bot vermeidet Fachjargon, gibt motivierende Rückmeldungen und unterstützt bei Ernährungsfragen ohne belehrend zu wirken.
 
 Und zuletzt haben wir uns noch mit der Architekur des Chatbots beschäftigt. Für die technische Umsetzung von NutriBot haben wir eine modulare Architektur gewählt, die eine klare Trennung zwischen Dialogführung, Datenzugriff und Kanälen ermöglicht. Ziel war es, eine Lösung zu schaffen, die sowohl funktional als auch zukunftssicher ist.
