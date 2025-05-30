@@ -83,7 +83,7 @@ Im Anschluss folgt ein automatisierter Kalorienrechner – ein in Voiceflow eing
 
 ### Technische Umsetzung und Besonderheiten
 
-Die Umsetzung erfolgt vollständig in Voiceflow, wobei mehrere Blöcke mit denselben Namen („New Block 7“, „New Block 8“, etc.) verwendet werden – jedoch mit klarer Trennung nach Kontext (Login vs. Signup). Durch diese Struktur lässt sich der Flow visuell kompakt halten, ohne an Klarheit zu verlieren.
+Die Umsetzung erfolgt vollständig in Voiceflow, wobei die Blöcke im Onboarding-Flow jetzt mit sprechenden Namen versehen wurden – zum Beispiel „Login Email Abfrage“, „Signup Email Abfrage“, „Check Email in DB“ oder „User-Datenerfassung“. Diese klare Benennung sorgt für eine bessere Lesbarkeit und Nachvollziehbarkeit des Flows und erleichtert es, den Kontext jedes Blocks direkt zu erkennen. Durch diese Struktur bleibt der Flow auch bei zunehmender Komplexität übersichtlich und lässt sich einfacher warten und anpassen.
 
 Externe Anfragen und Datenverarbeitung laufen über Webhooks zu **Make.com**, was eine einfache, aber leistungsstarke Möglichkeit darstellt, auf Benutzereingaben dynamisch zu reagieren, Daten zu speichern oder zu verifizieren.
 
