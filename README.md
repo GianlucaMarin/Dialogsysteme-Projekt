@@ -66,6 +66,11 @@ Wählen die Nutzer:innen den Login-Pfad, wird zunächst ihre E-Mail-Adresse abge
 
 Wird die E-Mail erkannt (Status = true), fragt der Bot das Passwort ab. Auch dieses wird an Make übermittelt und dort validiert. Bei erfolgreicher Authentifizierung erhalten die Nutzer:innen eine Bestätigung („Login successful“) und können direkt in den weiteren Anwendungsbereich übergehen. Ist das Passwort hingegen falsch, wird eine entsprechende Fehlermeldung angezeigt, mit der Möglichkeit, es erneut einzugeben.
 
+<p align="left">
+  <img src="./Screenshot 2025-05-30 155539.png" width="300" alt="Screenshot 2025-05-30 155539.png" />
+  <img src="./Screenshot 2025-05-30 155643.png" width="300" alt="Screenshot 2025-05-30 155643.png" />
+</p>
+
 Wird die eingegebene E-Mail nicht erkannt (Status = false), fragt der Bot, ob ein neues Konto erstellt werden soll. Lehnt die Person dies ab, endet der Dialog mit einer Verabschiedung. Stimmt sie zu, wird nahtlos in den Signup-Pfad gewechselt.
 
 ### Signup-Pfad
