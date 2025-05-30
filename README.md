@@ -72,6 +72,11 @@ Wird die eingegebene E-Mail nicht erkannt (Status = false), fragt der Bot, ob ei
 
 Im Registrierungspfad wird ebenfalls zunächst die E-Mail-Adresse abgefragt und via Make geprüft. Falls diese bereits existiert, wird eine Warnung ausgegeben („E-Mail already exists – please try to login“) und der Nutzer zum Login zurückgeführt. Ist die Adresse neu, beginnt das eigentliche Onboarding.
 
+<p align="left">
+  <img src="./Screenshot 2025-05-30 145611.png" width="300" alt="E-Mail-Überprüfung mit POST an Make" />
+  <img src="./Screenshot 2025-05-30 145914.png" width="300" alt="E-Mail-Check in Make: Details" />
+</p>
+
 Der Bot führt nun einen dialogischen Fragebogen durch, um die persönlichen Eckdaten der Nutzer:innen zu erfassen: Grösse, Gewicht, Geschlecht und individuelles Ziel (z. B. Muskelaufbau, Abnehmen oder Gewicht halten). Diese Eingaben werden als Variablen gespeichert und bilden die Grundlage für die personalisierte Betreuung durch NutriBot.
 
 Im Anschluss folgt ein automatisierter Kalorienrechner – ein in Voiceflow eingebetteter JavaScript-Block –, der den ungefähren täglichen Kalorienbedarf der Person berechnet. Dieser Wert wird abschliessend in einem separaten Block ausgegeben („Your estimated daily calorie requirement is approximately 2'300 kcal“) und steht dem System für spätere Empfehlungen zur Verfügung.
