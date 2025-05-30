@@ -59,6 +59,11 @@ Zu Beginn begrüsst der Bot die Nutzer:innen mit einer Nachricht, die erklärt, 
 
 Wählen die Nutzer:innen den Login-Pfad, wird zunächst ihre E-Mail-Adresse abgefragt. Diese wird über einen POST-Request an Make übermittelt, wo automatisiert geprüft wird, ob die E-Mail-Adresse bereits in der hinterlegten Datenbank vorhanden ist. Abhängig vom Rückgabestatus erfolgt die weitere Navigation: 
 
+<p align="center">
+  <img width="250" alt="E-Mail-Überprüfung mit POST an Make" src="https://github.com/user-attachments/assets/b077c96d-8fdb-4cd0-8662-3c262eea3a58" />
+  <img width="250" alt="E-Mail-Check in Make: Details" src="https://github.com/user-attachments/assets/c82cffd1-7e01-4157-88cc-03cca14cb3f9" />
+</p>
+
 Wird die E-Mail erkannt (Status = true), fragt der Bot das Passwort ab. Auch dieses wird an Make übermittelt und dort validiert. Bei erfolgreicher Authentifizierung erhalten die Nutzer:innen eine Bestätigung („Login successful“) und können direkt in den weiteren Anwendungsbereich übergehen. Ist das Passwort hingegen falsch, wird eine entsprechende Fehlermeldung angezeigt, mit der Möglichkeit, es erneut einzugeben.
 
 Wird die eingegebene E-Mail nicht erkannt (Status = false), fragt der Bot, ob ein neues Konto erstellt werden soll. Lehnt die Person dies ab, endet der Dialog mit einer Verabschiedung. Stimmt sie zu, wird nahtlos in den Signup-Pfad gewechselt.
