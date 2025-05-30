@@ -6,7 +6,7 @@ Im Rahmen des Moduls *Dialogsysteme* haben wir den Chatbot **NutriBot** konzipie
 
 Zu Beginn des Projekts stand die **Definition des Use Cases** im Fokus. Wir stellten uns die Frage, welches konkrete Problem unser Bot lösen soll. Dabei identifizierten wir mehrere Herausforderungen: Viele Menschen wollen sich gesünder ernähren, wissen jedoch nicht, wie sie vorhandene Zutaten sinnvoll kombinieren können, haben kein Verständnis für Makronährstoffe oder verlieren bei der Alltagsplanung schnell den Überblick über ihre Nährstoffaufnahme. Aus diesen Überlegungen ergab sich unser Ziel: Ein digitaler Assistent, der sowohl **Essensvorschläge basierend auf verfügbaren Zutaten liefert** als auch **Makros transparent berechnet und mittrackt**.
 
-<img width="400" alt="Definition des Use Cases für NutriBot" src="https://github.com/user-attachments/assets/876552cb-1146-43a8-adba-ed57d85db61d" />
+<img width="354" alt="Definition des Use Cases für NutriBot" src="https://github.com/user-attachments/assets/876552cb-1146-43a8-adba-ed57d85db61d" />
 
 
 Im nächsten Schritt entwickelten wir eine **User Persona**, um die Bedürfnisse und Erwartungen unserer Zielgruppe besser zu verstehen. Die Persona „Mans Hustermann“ steht dabei stellvertretend für gesundheitsbewusste, aktive Menschen, die Wert auf einfache, funktionale Ernährungslösungen legen, jedoch Unterstützung bei der Umsetzung brauchen – sei es bei der Makroberechnung, bei der Ideenfindung oder beim Tracken von Mahlzeiten.
