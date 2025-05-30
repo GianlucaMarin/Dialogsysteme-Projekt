@@ -87,7 +87,7 @@ Die Umsetzung erfolgt vollständig in Voiceflow, wobei die Blöcke im Onboarding
 
 Externe Anfragen und Datenverarbeitung laufen über Webhooks zu **Make.com**, was eine einfache, aber leistungsstarke Möglichkeit darstellt, auf Benutzereingaben dynamisch zu reagieren, Daten zu speichern oder zu verifizieren. Ein weiteres Beispiel ist die Pull User Info-Funktion in Make. Hier wird ein Webhook verwendet, um Informationen zu einem Benutzer abzurufen, und diese anschließend über den Data Store zu speichern oder zu aktualisieren:
 
-<img src="https://github.com/user-attachments/assets/f327264f-6355-4850-96f9-bada93209bbb" width="300" alt="Pull User Info Screenshot" />
+<img src="Screenshot 2025-05-30 151628.png" width="300" alt="Pull User Info Screenshot" />
 
 Besonders hervorzuheben ist die durchdachte Fehlerbehandlung: Falsche Passworteingaben, doppelte E-Mails und nicht gefundene Nutzer:innen werden jeweils aufgefangen und mit passenden Alternativen gelöst. Diese Logik stärkt die Nutzerfreundlichkeit und sorgt für ein robustes Dialogerlebnis.
 
