@@ -106,11 +106,11 @@ Nach dem Einstieg begrüsst NutriBot die Person und zeigt das aktuelle Ernährun
 
 ### 1. Kalorien-Tracking
 
-Wenn Nutzer:innen sich entscheiden, ihre Kalorienaufnahme zu verwalten, führt NutriBot sie zunächst zu einem Auswahlmenü in „New Block 6“. Hier stehen zwei Optionen zur Verfügung: „Add Calories“ oder „View Daily Calories“. Diese Trennung wurde bewusst gewählt, um je nach Ziel eine gezielte Aktion zu ermöglichen.
+Wenn Nutzer:innen sich entscheiden, ihre Kalorienaufnahme zu verwalten, führt NutriBot sie zunächst zu einem Auswahlmenü. Hier stehen zwei Optionen zur Verfügung: „Add Calories“ oder „View Daily Calories“. Diese Trennung wurde bewusst gewählt, um je nach Ziel eine gezielte Aktion zu ermöglichen.
 
-**Wird die Option „Add Calories“ gewählt**, fragt der Bot, wie viele Kalorien der Nutzer aufgenommen hat. Diese Information wird gespeichert und via POST-Request an Make übertragen, wo die bisherigen Kalorienwerte für den aktuellen Tag abgerufen und aktualisiert werden. Anschliessend übernimmt „New Block 8“ die Rückmeldung: Ein JavaScript-Block berechnet die neue Gesamtsumme, die dem Nutzer zurückgemeldet wird, etwa mit der Nachricht „Your total calories are now: 1'850 kcal – database is updated :)“. Dies schafft Transparenz und motiviert zur Selbstkontrolle.
+**Wird die Option „Add Calories“ gewählt**, fragt der Bot, wie viele Kalorien der Nutzer aufgenommen hat. Diese Information wird gespeichert und via POST-Request an Make übertragen, wo die bisherigen Kalorienwerte für den aktuellen Tag abgerufen und aktualisiert werden. Anschliessend erfolgt eine Rückmeldung: Ein JavaScript-Block berechnet die neue Gesamtsumme, die dem Nutzer zurückgemeldet wird, etwa mit der Nachricht „Your total calories are now: 1'850 kcal – database is updated :)“. Dies schafft Transparenz und motiviert zur Selbstkontrolle.
 
-**Wird hingegen „View Daily Calories“ gewählt**, verzweigt der Flow zu einem zweiten „New Block 9“, in dem einfach die bisherige Tagesbilanz angezeigt wird. Auch hier erfolgt der Abruf über Make, jedoch ohne Änderung an der Datenbank – das System bleibt lesend und informativ.
+**Wird hingegen „View Daily Calories“ gewählt**, verzweigt der Flow zu einem zweiten Block, in dem einfach die bisherige Tagesbilanz angezeigt wird. Auch hier erfolgt der Abruf über Make, jedoch ohne Änderung an der Datenbank – das System bleibt lesend und informativ.
 
 Durch diese saubere Trennung zwischen Abfrage und Aktualisierung wird vermieden, dass Nutzer:innen versehentlich Daten überschreiben oder ungewollte Eingaben tätigen. Gleichzeitig bleibt die Interaktion effizient und leicht verständlich.
 
