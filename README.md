@@ -82,7 +82,11 @@ Im Registrierungspfad wird ebenfalls zunächst die E-Mail-Adresse abgefragt und 
   <img src="./Screenshot 2025-05-30 145914.png" width="300" alt="E-Mail-Check in Make: Details" />
 </p>
 
-Der Bot führt nun einen dialogischen Fragebogen durch, um die persönlichen Eckdaten der Nutzer:innen zu erfassen: Grösse, Gewicht, Geschlecht und individuelles Ziel (z. B. Muskelaufbau, Abnehmen oder Gewicht halten). Diese Eingaben werden als Variablen gespeichert und bilden die Grundlage für die personalisierte Betreuung durch NutriBot.
+Der Bot führt nun einen dialogischen Fragebogen durch, um die persönlichen Eckdaten der Nutzer zu erfassen: Grösse, Gewicht, Geschlecht und individuelles Ziel (z. B. Muskelaufbau, Abnehmen oder Gewicht halten). Diese Eingaben werden als Variablen gespeichert und bilden die Grundlage für die personalisierte Betreuung durch NutriBot.
+
+Nach der Erfassung werden die Nutzerdaten über einen POST-Request an Make.com gesendet. Make.com verarbeitet die Daten und leitet sie zur dauerhaften Speicherung an die Datenbank weiter. Dadurch wird sichergestellt, dass die personalisierten Informationen für zukünftige Interaktionen verfügbar bleiben.
+
+![Datenbank](https://github.com/user-attachments/assets/7ab1b016-21a8-4efc-b3e0-41ed6183305b)
 
 Im Anschluss folgt ein automatisierter Kalorienrechner – ein in Voiceflow eingebetteter JavaScript-Block –, der den ungefähren täglichen Kalorienbedarf der Person berechnet. Dieser Wert wird abschliessend in einem separaten Block ausgegeben („Your estimated daily calorie requirement is approximately 2'300 kcal“) und steht dem System für spätere Empfehlungen zur Verfügung.
 
