@@ -19,6 +19,8 @@ Basierend darauf konzipierten wir eine passende **Bot-Persona**. NutriBot ist fr
 
 Und zuletzt haben wir uns noch mit der Architekur des Chatbots beschäftigt. Für die technische Umsetzung von NutriBot haben wir eine modulare Architektur gewählt, die eine klare Trennung zwischen Dialogführung, Datenzugriff und Kanälen ermöglicht. Ziel war es, eine Lösung zu schaffen, die sowohl funktional als auch zukunftssicher ist.
 
+<img src="Screenshot 2025-05-30 143928.png" width="400" alt="Bot Architektur für NutriBot" />
+
 **1. Datenbedarf:**  
 Um relevante Empfehlungen zu geben und Makronährstoffe zu berechnen, benötigt der Bot Zugriff auf:
 - Eine **Nährwertdatenbank** (z. B. OpenFoodFacts), um Makros und Inhaltsstoffe abzurufen.
