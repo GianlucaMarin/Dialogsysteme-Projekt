@@ -110,6 +110,11 @@ Wenn Nutzer:innen sich entscheiden, ihre Kalorienaufnahme zu verwalten, führt N
 
 **Wird die Option „Add Calories“ gewählt**, fragt der Bot, wie viele Kalorien der Nutzer aufgenommen hat. Diese Information wird gespeichert und via POST-Request an Make übertragen, wo die bisherigen Kalorienwerte für den aktuellen Tag abgerufen und aktualisiert werden. Anschliessend erfolgt eine Rückmeldung: Ein JavaScript-Block berechnet die neue Gesamtsumme, die dem Nutzer zurückgemeldet wird, etwa mit der Nachricht „Your total calories are now: 1'850 kcal – database is updated :)“. Dies schafft Transparenz und motiviert zur Selbstkontrolle.
 
+<p align="left">
+  <img src="./Screenshot 2025-05-30 160616.png" width="300" alt="Screenshot 2025-05-30 160616.png" />
+  <img src="./Screenshot 2025-05-30 160737.png" width="300" alt="Screenshot 2025-05-30 160737.png" />
+</p>
+
 **Wird hingegen „View Daily Calories“ gewählt**, verzweigt der Flow zu einem zweiten Block, in dem einfach die bisherige Tagesbilanz angezeigt wird. Auch hier erfolgt der Abruf über Make, jedoch ohne Änderung an der Datenbank – das System bleibt lesend und informativ.
 
 Durch diese saubere Trennung zwischen Abfrage und Aktualisierung wird vermieden, dass Nutzer:innen versehentlich Daten überschreiben oder ungewollte Eingaben tätigen. Gleichzeitig bleibt die Interaktion effizient und leicht verständlich.
