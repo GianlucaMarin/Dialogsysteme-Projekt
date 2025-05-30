@@ -15,6 +15,8 @@ Im nächsten Schritt entwickelten wir eine **User Persona**, um die Bedürfnisse
 
 Basierend darauf konzipierten wir eine passende **Bot-Persona**. NutriBot ist freundlich, verständlich und ermutigend im Ton – bewusst so gewählt, um einen niedrigschwelligen Einstieg zu ermöglichen. Der Bot vermeidet Fachjargon, gibt motivierende Rückmeldungen und unterstützt bei Ernährungsfragen ohne belehrend zu wirken.
 
+<img src="Screenshot 2025-05-30 143711.png" width="400" alt="Bot Persona für NutriBot" />
+
 Und zuletzt haben wir uns noch mit der Architekur des Chatbots beschäftigt. Für die technische Umsetzung von NutriBot haben wir eine modulare Architektur gewählt, die eine klare Trennung zwischen Dialogführung, Datenzugriff und Kanälen ermöglicht. Ziel war es, eine Lösung zu schaffen, die sowohl funktional als auch zukunftssicher ist.
 
 **1. Datenbedarf:**  
