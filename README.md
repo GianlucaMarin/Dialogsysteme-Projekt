@@ -9,6 +9,8 @@ Contributors:
 
 Im Rahmen des Moduls *Dialogsysteme* haben wir den Chatbot **NutriBot** konzipiert und in Voiceflow umgesetzt. Ziel des Projekts war es, ein Dialogsystem zu entwickeln, das Nutzer:innen dabei unterstützt, mit vorhandenen Zutaten gesunde Mahlzeiten zu planen – und dabei die Makronährstoffe (Proteine, Kohlenhydrate, Fette) im Blick zu behalten.
 
+**Miro Link:** https://miro.com/app/board/uXjVITRticg=/
+
 Zu Beginn des Projekts stand die **Definition des Use Cases** im Fokus. Wir stellten uns die Frage, welches konkrete Problem unser Bot lösen soll. Dabei identifizierten wir mehrere Herausforderungen: Viele Menschen wollen sich gesünder ernähren, wissen jedoch nicht, wie sie vorhandene Zutaten sinnvoll kombinieren können, haben kein Verständnis für Makronährstoffe oder verlieren bei der Alltagsplanung schnell den Überblick über ihre Nährstoffaufnahme. Aus diesen Überlegungen ergab sich unser Ziel: Ein digitaler Assistent, der sowohl **Essensvorschläge basierend auf verfügbaren Zutaten liefert** als auch **Makros transparent berechnet und mittrackt**.
 
 <img src="Screenshot 2025-05-30 142727.png" width="400" alt="Definition des Use Cases für NutriBot" />
