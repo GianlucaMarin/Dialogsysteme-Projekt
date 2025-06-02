@@ -24,7 +24,7 @@ Basierend darauf konzipierten wir eine passende **Bot-Persona**. NutriBot ist fr
 
 <img src="Screenshot 2025-05-30 143711.png" width="400" alt="Bot Persona für NutriBot" />
 
-Um einen realistischen Eindruck von den geplanten Interaktionen mit NutriBot zu bekommen, haben wir zu Beginn zwei Sample Dialoge erstellt. Diese dienen als Grundlage für die Entwicklung der späteren Dialog-Logik in Voiceflow. Der erste Dialog wurde als Screenshot in die Dokumentation integriert und zeigt beispielhafte Interaktionen zwischen dem Bot und den Nutzer:innen, wie z. B. die Erfassung von Fitnesszielen, Kalorienangaben und das Tracken von Mahlzeiten. Der zweite Sample Dialog ist aufgrund seiner Größe nicht hier in der Dokumentation abgebildet, sondern in unserem Miro zu sehen.
+Um einen realistischen Eindruck von den geplanten Interaktionen mit NutriBot zu bekommen, haben wir zu Beginn zwei Sample Dialoge erstellt. Diese dienen als Grundlage für die Entwicklung der späteren Dialog-Logik in Voiceflow. Der erste Dialog wurde als Screenshot in die Dokumentation integriert und zeigt beispielhafte Interaktionen zwischen dem Bot und den Nutzer:innen, wie z. B. die Erfassung von Fitnesszielen, Kalorienangaben und das Tracken von Mahlzeiten. Der zweite Sample Dialog ist aufgrund seiner Grösse nicht hier in der Dokumentation abgebildet, sondern in unserem Miro zu sehen.
 
 <img src="./Screenshot 2025-06-02 125008.png" width="500" alt="Sample Dialogue Screenshot" />
 
@@ -107,7 +107,7 @@ Im Anschluss folgt ein automatisierter Kalorienrechner – ein in Voiceflow eing
 
 Die Umsetzung erfolgt vollständig in Voiceflow, wobei die Blöcke im Onboarding-Flow jetzt mit sprechenden Namen versehen wurden – zum Beispiel „Login Email Abfrage“, „Signup Email Abfrage“, „Check Email in DB“ oder „User-Datenerfassung“. Diese klare Benennung sorgt für eine bessere Lesbarkeit und Nachvollziehbarkeit des Flows und erleichtert es, den Kontext jedes Blocks direkt zu erkennen. Durch diese Struktur bleibt der Flow auch bei zunehmender Komplexität übersichtlich und lässt sich einfacher warten und anpassen.
 
-Externe Anfragen und Datenverarbeitung laufen über Webhooks zu **Make.com**, was eine einfache, aber leistungsstarke Möglichkeit darstellt, auf Benutzereingaben dynamisch zu reagieren, Daten zu speichern oder zu verifizieren. Ein weiteres Beispiel ist die Pull User Info-Funktion in Make. Hier wird ein Webhook verwendet, um Informationen zu einem Benutzer abzurufen, und diese anschließend über den Data Store zu speichern oder zu aktualisieren:
+Externe Anfragen und Datenverarbeitung laufen über Webhooks zu **Make.com**, was eine einfache, aber leistungsstarke Möglichkeit darstellt, auf Benutzereingaben dynamisch zu reagieren, Daten zu speichern oder zu verifizieren. Ein weiteres Beispiel ist die Pull User Info-Funktion in Make. Hier wird ein Webhook verwendet, um Informationen zu einem Benutzer abzurufen, und diese anschliessend über den Data Store zu speichern oder zu aktualisieren:
 
 <img src="Screenshot 2025-05-30 151628.png" width="300" alt="Pull User Info Screenshot" />
 
