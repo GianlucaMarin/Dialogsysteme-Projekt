@@ -26,7 +26,7 @@ Basierend darauf konzipierten wir eine passende **Bot-Persona**. NutriBot ist fr
 
 Um einen realistischen Eindruck von den geplanten Interaktionen mit NutriBot zu bekommen, haben wir zu Beginn zwei Sample Dialoge erstellt. Diese dienen als Grundlage für die Entwicklung der späteren Dialog-Logik in Voiceflow. Der erste Dialog wurde als Screenshot in die Dokumentation integriert und zeigt beispielhafte Interaktionen zwischen dem Bot und den Nutzer:innen, wie z. B. die Erfassung von Fitnesszielen, Kalorienangaben und das Tracken von Mahlzeiten. Der zweite Sample Dialog ist aufgrund seiner Größe nicht hier in der Dokumentation abgebildet, sondern in unserem Miro zu sehen.
 
-
+<img src="./Screenshot 2025-06-02 125008.png" width="300" alt="Sample Dialogue Screenshot" />
 
 Und zuletzt haben wir uns noch mit der Architekur des Chatbots beschäftigt. Für die technische Umsetzung von NutriBot haben wir eine modulare Architektur gewählt, die eine klare Trennung zwischen Dialogführung, Datenzugriff und Kanälen ermöglicht. Ziel war es, eine Lösung zu schaffen, die sowohl funktional als auch zukunftssicher ist.
 
