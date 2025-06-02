@@ -49,6 +49,8 @@ Die gewählte Architektur ist bewusst offen gestaltet, um Erweiterungen wie Reze
 
 Für die Umsetzung entschieden wir uns für Voiceflow, da es eine visuelle, intuitive Entwicklung von Konversationslogiken erlaubt. Wir haben zwei zentrale Dialog-Flows erstellt:
 
+**Voiceflow Link:** https://creator.voiceflow.com/project/681a0e5f77224da8fccb6a41/canvas/64dbb6696a8fab0013dba194
+
 1. **Onboarding-Flow**
 
 Der Onboarding-Flow stellt den Einstiegspunkt für Nutzer:innen dar und ist in zwei Hauptpfade unterteilt: Login und Registrierung (Signup). Ziel ist es, neue Benutzer:innen zu erfassen, bestehende anzumelden und gleichzeitig die grundlegenden persönlichen Informationen einzuholen, die für spätere Empfehlungen benötigt werden.
